@@ -1,6 +1,11 @@
 spring:
   application:
     name: accounts-service  # Identify this application
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: accounts-service
+      profile: default
 
 # HTTP Server
 server:
