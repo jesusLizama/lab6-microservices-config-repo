@@ -10,13 +10,12 @@ El link al repositorio es el siguiente:
 
 - Two services `accounts (2222)` and `web` are running and registered (two terminals). **2 Log screenshot**.
 
-Los logs completos de la terminal de accounts son los siguientes:
-![Nuevo web](./img/account2.png)
-![Nuevo web](./img/account1.png)
+Hemos lanzado tanto el account como el web, y hemos accedido mediante la url al puerto 4444, el 
+cual es el correspondiente al de web. Hemos realizado una peticion y vemos en los logs la peticion 
+correspondiente como no salta excepcion, con lo cual ambos estan corriendo.
 
-Los logs completos de la terminal de web son los siguientes:
-![Nuevo web](./img/web2.png)
-![Nuevo web](./img/web1.png)
+Imagen correspondiente de la terminal de web es la siguiente:
+![Nuevo web](./img/account2.png)
 
 
 - The service registration service has these two services registered (a third terminal). **Eureka dashboard screenshot**.
@@ -33,7 +32,9 @@ Como podemos observar, hemos conseguido correr dos servicios account sin tener q
 en el puerto 2222 y hemos cambiado al 3333 y ha funcionado.
 
 - What happens when you kill the service `accounts (2222)` and do requests to `web`?. **Explain and screenshots, including at least one Eureka dashboard screenshot**
-Si matas el accounts en el puerto 2222, desaparece y solo queda correindo el del puerto 3333.
+Si matas el accounts en el puerto 2222, desaparece y solo queda correindo el del puerto 3333. Con lo cual, si tenemos ambos correindo eurica 
+- tiene un momento en el que estan correindo ambos, si depsues matas el del 2222, se queda solo el del 333 y eurica asigna automaticamente a el,
+- con lo cual 
 
 
 - Can the web service provide information about the accounts again?. Why? **Explain and screenshots, including at least one Eureka dashboard screenshot** 
