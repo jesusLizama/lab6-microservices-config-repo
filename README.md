@@ -15,7 +15,7 @@ cual es el correspondiente al de web. Hemos realizado una peticion y vemos en lo
 correspondiente como no salta excepcion, con lo cual ambos estan corriendo.
 
 Imagen correspondiente de la terminal de web es la siguiente:
-![Nuevo web](./img/account2.png)
+![Nuevo web](./img/webPeticion.png)
 
 
 - The service registration service has these two services registered (a third terminal). **Eureka dashboard screenshot**.
